@@ -30,7 +30,6 @@ The strategy separates the prediction task into two distinct supervised learning
 * **Approach:** Rolling Window Analysis.
 * **Training Window:** 204 months (17 years).
 * **Refit Frequency:** Monthly (models are retrained every month to incorporate new data).
-* **Out-of-Sample Period:** Feb 2007 – Jan 2025.
 
 ---
 
