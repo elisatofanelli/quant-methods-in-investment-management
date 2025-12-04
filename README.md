@@ -35,8 +35,7 @@ The strategy separates the prediction task into two distinct supervised learning
 ---
 
 ## Repository Structure
-
-.
+│
 ├── README.md                             # Project overview and documentation
 ├── factor_dataset_construction.ipynb     # Factors Returns Dataset Creation
 ├── clustering.ipynb                      # Market Regimes Creation
