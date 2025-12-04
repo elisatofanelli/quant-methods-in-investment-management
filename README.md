@@ -1,7 +1,7 @@
 # Exploring Factor Prediction Outcomes: A Two-Stage Machine Learning Approach
 
 ## Project Overview
-This project implements a dynamic investment strategy based on a **Two-Stage Machine Learning Framework**. The objective is to generate excess returns by systematically rotating between equity style factors (**Value, Growth, Momentum, Low Volatility, Quality**) based on the predicted market environment.
+This project implements a dynamic investment strategy based on a Two-Stage Machine Learning Framework. The objective is to generate excess returns by systematically rotating between equity style factors (Value, Growth, Momentum, Low Volatility, Quality) based on the predicted market environment.
 
 Instead of a static allocation, our model adapts to changing economic conditions by:
 1.  **Identifying the Market Regime** 
@@ -16,15 +16,15 @@ The strategy separates the prediction task into two distinct supervised learning
 
 #### **Stage 1: Regime Detection**
 * **Goal:** Predict if the next month will be a "Normal" market or a "Non-Normal" one (Correction/Bear).
-* **Model:** **XGBoost Classifier**.
+* **Model:** XGBoost Classifier.
 * **Rationale:** Selected for its ability to handle non-linear interactions between macroeconomic variables and its superior balance of F1-Score on imbalanced crash data compared to Random Forest and Logistic Regression.
 
 #### **Stage 2: Factor Selection**
 * **Goal:** Given the predicted regime, determine which factor has the highest probability of outperforming the market.
 * **Model:** **Stacking Ensemble**.
 * **Architecture:**
-    * *Level 1:* **Random Forest**, **Support Vector Machine**, **Gaussian Naive Bayes**.
-    * *Level 2:* **Logistic Regression** to optimize the weights of the base predictions.
+    * *Level 1:* Random Forest, Support Vector Machine, Gaussian Naive Bayes.
+    * *Level 2:* Logistic Regression to optimize the weights of the base predictions.
 
 ### Backtesting Strategy
 * **Approach:** Rolling Window Analysis.
