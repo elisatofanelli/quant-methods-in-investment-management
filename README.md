@@ -1,4 +1,4 @@
-# Equity Factor Timing: A Two-Stage Machine Learning Approach
+# Exploring Factor Prediction Outcomes: A Two-Stage Machine Learning Approach
 
 ## Project Overview
 This project implements a dynamic investment strategy based on a **Two-Stage Machine Learning Framework**. The objective is to generate excess returns by systematically rotating between equity style factors (**Value, Growth, Momentum, Low Volatility, Quality**) based on the predicted market environment.
